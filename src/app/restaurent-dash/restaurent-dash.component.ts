@@ -12,6 +12,7 @@ export class RestaurentDashComponent implements OnInit {
 
   formValue!: FormGroup
   restaurentModelObj:RestaurentData= new RestaurentData;
+  allRestaurentData:any
   constructor(private formBuilder: FormBuilder, private api:ApiService) { }
 
   ngOnInit(): void {
@@ -23,6 +24,7 @@ export class RestaurentDashComponent implements OnInit {
       services: ['']
 
     })
+    this.getAllData()
   }
   //subscribing our data which is maped via Services
   addResto(){
@@ -44,5 +46,18 @@ export class RestaurentDashComponent implements OnInit {
     }
      )
   }
+
+  //get all data
+  getAllData(){
+    this.api.getRestaurent().subscribe(res=>{
+      console.log(res);
+      
+      this.allRestaurentData=res;
+      
+      
+    })
+  }
+
+  // (48:59)
 
 }
