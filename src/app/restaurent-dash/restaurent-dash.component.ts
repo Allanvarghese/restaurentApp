@@ -58,6 +58,12 @@ export class RestaurentDashComponent implements OnInit {
     })
   }
 
-  // (48:59)
+  // delete data 
+  deleteResto(data:any){
+    this.api.deleteRestaurent(data.id).subscribe(res=>{
+      alert("Restaurent Records Deleted..");
+      this.getAllData(); //quick refresh data table.....
+    })
+  }
 
 }
