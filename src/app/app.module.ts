@@ -7,12 +7,14 @@ import {HttpClientModule} from "@angular/common/http"
 import { AppComponent } from './app.component';
 import { RestaurentDashComponent } from './restaurent-dash/restaurent-dash.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RestaurentDashComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
     
   ],
   imports: [
