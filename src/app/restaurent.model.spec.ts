@@ -1,7 +1,7 @@
-import { Restaurent } from './restaurent.model';
+import { RestaurentData } from './restaurent.model';
 
 describe('Restaurent', () => {
   it('should create an instance', () => {
-    expect(new Restaurent()).toBeTruthy();
+    expect(new RestaurentData()).toBeTruthy();
   });
 });
