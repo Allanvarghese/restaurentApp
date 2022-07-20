@@ -1,0 +1,19 @@
+{
+  "name": "restaurentserver",
+  "version": "1.0.0",
+  "description": "server to store delete update restaurent details for restaurentapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allanvarghese/restaurentApp.git"
+  },
+  "author": "allan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allanvarghese/restaurentApp/issues"
+  },
+  "homepage": "https://github.com/Allanvarghese/restaurentApp#readme"
+}
